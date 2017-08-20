@@ -2,6 +2,7 @@
   color: #fff;
   background-color: #4ad04a;
   padding: 100px 25px;
+  margin-bottom: 0px;
 }
 
 .container-fluid {
@@ -10,8 +11,4 @@
 
 .bg-grey {
   background-color: #f6f6f6;
-}
-
-.welcomeVideo {
-  padding-bottom: 50px;
 }

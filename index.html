@@ -7,7 +7,30 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
+<body id="miPagina" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a id="logoPS" class="navbar-brand" href="#">PS</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#sobreNosotros">SOBRE NOSOTROS</a></li>
+          <li><a href="#porqueJugar">PORQUE JUGAR</a></li>
+          <li><a href="#queNecesito">QUE NECESITO</a></li>
+          <li><a href="#comoJugar">COMO JUGAR</a></li>
+          <li><a href="#dondeJugar">DONDE JUGAR</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
   <div class="jumbotron text-center">
     <h1>Primer Servicio</h1>
     <p>Dale una oportunidad al tenis</p>
@@ -15,7 +38,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </div>
 
-  <div class="container-fluid">
+  <div id="sobreNosotros" class="container-fluid">
     <div class="row">
       <div class="col-sm-7 welcomeMessage">
         <h2>Bienvenido</h2>
@@ -30,21 +53,21 @@
     </div>
   </div>
 
-  <div class="container-fluid bg-grey">
+  <div id="porqueJugar" class="container-fluid bg-grey">
     <div class="row">
+      <div class="col-sm-4">
+        <span><img src="images/tennisBall.png" height=150px width=150px></span>
+      </div>
       <div class="col-sm-8">
         <h2>¿Porqué jugar al tenis?</h2>
         <ol>
           <li class="parrafo">Bueno para la salud</li>
         </ol>
       </div>
-      <div class="col-sm-4">
-        <span><img src="images/tennisBall.png" height=150px width=150px></span>
-      </div>
     </div>
   </div>
 
-  <div class="container-fluid">
+  <div id="queNecesito" class="container-fluid">
     <div class="text-center">
       <h2 id="tituloJugar">¿Qué necesito para jugar?</h2>
     </div>
@@ -91,5 +114,33 @@
     </div>
   </div>
 
+  <div id="comoJugar" class="container-fluid bg-grey">
+    <div class="row">
+      <div class="col-sm-8">
+        <h2>¿Cómo jugar?</h2>
+      </div>
+      <div class="col-sm-4">
+        <span><img src="images/tennisBall.png" height=150px width=150px></span>
+      </div>
+    </div>
+  </div>
+
+  <div id="dondeJugar" class="container-fluid">
+    <div class="text-center">
+      <h2 id="tituloJugar">¿Dónde jugar?</h2>
+    </div>
+    <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31813.765235256746!2d-74.07972545100591!3d4.643836319810645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1stenis+de+campo+bogota!5e0!3m2!1ses!2ses!4v1503454788433" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <footer class="container-fluid text-center">
+    <a href="#miPagina" title="To Top">
+      <span class="glyphicon glyphicon-chevron-up"></span>
+    </a>
+    <p>japoveda10</p>
+  </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>

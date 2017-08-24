@@ -7,6 +7,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="shortcut icon" href="favicon.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
 </head>
 <body id="miPagina" data-spy="scroll" data-target=".navbar" data-offset="60">
 
@@ -128,24 +131,31 @@
     <div class="text-center">
       <h2 id="tituloJugar">¿Dónde jugar?</h2>
     </div>
-    <nav class="nav nav-tabs" id="myTab" role="tablist">
-      <a class="nav-item nav-link" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile">Bogotá</a>
-      <a class="nav-item nav-link" data-toggle="tab" href="#nav-profile-2" role="tab" aria-controls="nav-profile">Medellín</a>
-      <a class="nav-item nav-link" data-toggle="tab" href="#nav-profile-3" role="tab" aria-controls="nav-profile">Cali</a>
-      <a class="nav-item nav-link" data-toggle="tab" href="#nav-profile-4" role="tab" aria-controls="nav-profile">Pereira</a>
-    </nav>
-    <div class="tab-content" id="nav-tabContent">
-      <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-        <iframe id="mapaBogota" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31813.765235256746!2d-74.07972545100591!3d4.643836319810645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1stenis+de+campo+bogota!5e0!3m2!1ses!2ses!4v1503454788433" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-      </div>
-      <div class="tab-pane fade" id="nav-profile-2" role="tabpanel" aria-labelledby="nav-profile-tab">
-        <iframe id="mapaMedellin" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d38972.91316502933!2d-75.60371005843058!3d6.246172870672464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sliga+de+tenis+medellin!5e0!3m2!1ses!2ses!4v1503531883799" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-      </div>
-      <div class="tab-pane fade" id="nav-profile-3" role="tabpanel" aria-labelledby="nav-profile-tab">
-        <iframe id="mapaCali" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.6963299349713!2d-76.53771178580394!3d3.423941897507812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a6bd61938ad9%3A0xf77f453f4e4f3cdb!2sLiga+Vallecaucana+de+Tenis!5e0!3m2!1ses!2ses!4v1503531940268" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-      </div>
-      <div class="tab-pane fade" id="nav-profile-4" role="tabpanel" aria-labelledby="nav-profile-tab">
-        <iframe id="mapaPereira" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1017940.5503775867!2d-75.52446040821542!3d4.712572066658769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e387a4b2f4675f5%3A0x17905f7e4591d970!2sClub+Campestre+Pereira!5e0!3m2!1ses!2ses!4v1503532030203" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <div class="container">
+      <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#home">Bogotá</a></li>
+        <li><a data-toggle="tab" href="#menu1">Medellín</a></li>
+        <li><a data-toggle="tab" href="#menu2">Cali</a></li>
+        <li><a data-toggle="tab" href="#menu3">Pereira</a></li>
+      </ul>
+
+      <div class="tab-content">
+        <div id="home" class="tab-pane fade in active">
+          <h3>Bogotá</h3>
+          <iframe id="mapaBogota" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31813.765235256746!2d-74.07972545100591!3d4.643836319810645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1stenis+de+campo+bogota!5e0!3m2!1ses!2ses!4v1503454788433" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div id="menu1" class="tab-pane fade">
+          <h3>Medellín</h3>
+          <iframe id="mapaMedellin" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d38972.91316502933!2d-75.60371005843058!3d6.246172870672464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sliga+de+tenis+medellin!5e0!3m2!1ses!2ses!4v1503531883799" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div id="menu2" class="tab-pane fade">
+          <h3>Cali</h3>
+          <iframe id="mapaCali" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.6963299349713!2d-76.53771178580394!3d3.423941897507812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a6bd61938ad9%3A0xf77f453f4e4f3cdb!2sLiga+Vallecaucana+de+Tenis!5e0!3m2!1ses!2ses!4v1503531940268" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div id="menu3" class="tab-pane fade">
+          <h3>Pereira</h3>
+          <iframe id="mapaPereira" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1017940.5503775867!2d-75.52446040821542!3d4.712572066658769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e387a4b2f4675f5%3A0x17905f7e4591d970!2sClub+Campestre+Pereira!5e0!3m2!1ses!2ses!4v1503532030203" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
       </div>
     </div>
   </div>
@@ -157,8 +167,10 @@
     <p>japoveda10</p>
   </footer>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="js/main.js"></script>
+  <div class="container">
+
+
+</div>
+
 </body>
 </html>

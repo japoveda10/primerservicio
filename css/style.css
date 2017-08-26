@@ -82,6 +82,13 @@
   padding-bottom: 50px;
 }
 
+#masBeneficios {
+  background-color: #4ad04a;
+  color: #fff;
+  margin: 50px;
+  margin-left: 200px;
+}
+
 footer .glyphicon {
     font-size: 20px;
     margin-bottom: 20px;

@@ -20,4 +20,12 @@ $(document).ready(function(){
       });
     } // End if
   });
+
+  $("#tennisCourt").hide();
+  $("#tennisCourt").fadeIn(4000);
+
 })
+
+function writeMessage() {
+  alert("Net");
+}

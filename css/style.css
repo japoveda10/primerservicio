@@ -73,14 +73,14 @@
 }
 
 .panel-footer .btn {
-    margin: 15px 0;
-    background-color: #4ad04a;
-    color: #fff;
+  margin: 15px 0;
+  background-color: #4ad04a;
+  color: #fff;
 }
 
 .popover {
-    top: 500px !important;
-    left: 800px !important;
+  top: 100px !important;
+  left: 100px !important;
 }
 
 #tituloJugar {

@@ -20,8 +20,13 @@ $(document).ready(function(){
       });
     } // End if
   });
+
+  $("#mapacancha").imageMapResize();
 })
 
 $(function () {
   $('[data-toggle="popover"]').popover()
+  $('[data-toggle="popover"]').on('click', function (e) {
+        $('[data-toggle="popover"]').not(this).popover('hide');
+    });
 })

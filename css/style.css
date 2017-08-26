@@ -78,6 +78,11 @@
     color: #fff;
 }
 
+.popover {
+    top: 500px !important;
+    left: 800px !important;
+}
+
 #tituloJugar {
   padding-bottom: 50px;
 }

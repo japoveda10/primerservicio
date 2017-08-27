@@ -2,6 +2,13 @@
   color: #4ad04a;
 }
 
+#masBeneficios {
+  background-color: #4ad04a;
+  color: #fff;
+  margin: 50px;
+  margin-left: 200px;
+}
+
 .jumbotron {
   color: #fff;
   background-color: #4ad04a;
@@ -87,13 +94,6 @@
 
 .titulo {
   padding-bottom: 20px;
-}
-
-#masBeneficios {
-  background-color: #4ad04a;
-  color: #fff;
-  margin: 50px;
-  margin-left: 200px;
 }
 
 footer .glyphicon {

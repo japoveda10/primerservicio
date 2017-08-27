@@ -22,9 +22,11 @@ $(document).ready(function(){
     } // End if
   });
 
+  //Hace que las areas del mapa "mapacancha" se ajusten cuando la pantalla se reduce
   $("#mapacancha").imageMapResize();
 })
 
+//Hace que los popovers del mapa "mapacancha" funcionen
 $(function () {
   $('[data-toggle="popover"]').popover()
   $('[data-toggle="popover"]').on('click', function (e) {

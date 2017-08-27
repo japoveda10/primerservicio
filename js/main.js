@@ -1,3 +1,4 @@
+"use strict"
 $(document).ready(function(){
   // Add smooth scrolling to all links in navbar + footer link
   $(".navbar a, footer a[href='#miPagina']").on('click', function(event) {

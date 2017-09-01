@@ -9,6 +9,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
+  
+<!--  Cuando se usa PNG como favicon se debe especificar el tipo: https://stackoverflow.com/questions/6121725/favicon-ico-or-png-correct-tags  -->
+<!--  Puede ser mejor usar .ico para backwards compatibility  -->
   <link rel="shortcut icon" href="favicon.png">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
@@ -67,7 +70,9 @@
   <div id="porqueJugar" class="container-fluid bg-grey">
     <div class="row">
       <div class="col-sm-4">
-        <span><img src="images/tennis_ball.png" alt="pelota de tenis" height=150px width=150px/></span>
+        
+        <!-- Height y width están mal escritos en estas propiedades -->
+        <span><img src="images/tennis_ball.png" alt="pelota de tenis" /></span>
       </div>
       <div class="col-sm-8">
         <h2 class="titulo">¿Porqué jugar al tenis?</h2>
@@ -85,7 +90,10 @@
       </div>
       <div class="col-sm-8">
         <a target="_blank" href="http://www.om.com.uy/2013/11/34-razones-para-practicar-tenis/">
-          <button id="masBeneficios" class="btn btn-lg">Ver más</button>
+          
+<!-- Redudante y mala práctica: <button> no debe ser descendiente de <a> -->
+          
+          Ver más
         </a>
       </div>
     </div>
@@ -118,7 +126,8 @@
             <h1>Ropa deportiva</h1>
           </div>
           <div class="panel-body">
-            <img src="images/tennis_player.jpg" alt="jugador de tenis vestido de blanco" height=200px, width=150px/>
+            <!-- Height y width están mal escritos en estas propiedades -->
+            <img src="images/tennis_player.jpg" alt="jugador de tenis vestido de blanco"/>
           </div>
           <div class="panel-footer">
             <a target="_blank" href="http://www.tenniswarehouse-europe.com/equipment.html">
@@ -133,7 +142,8 @@
             <h1>Agua</h1>
           </div>
           <div class="panel-body">
-            <img src="images/water_bottle.png" alt="botella de agua" height=200px, width=150px/>
+            <!-- Height y width están mal escritos en estas propiedades -->
+            <img src="images/water_bottle.png" alt="botella de agua" />
           </div>
           <div class="panel-footer">
             <a target="_blank" href="https://www.nutriresponse.com/blog/nutricion-deportiva-para-tenis/">
@@ -151,7 +161,9 @@
       <div class="col-sm-12 text-center">
         <h2 class="titulo">¿Cómo jugar?</h2>
         <p class="parrafo">Dale click a las partes de la cancha para aprender sobre ellas.<p>
-        <img src="images/tennis_court.png" alt="cancha de tenis" usemap="#court" width=100% height=400px>
+        
+<!-- Height y width están mal escritos en estas propiedades -->
+        <img src="images/tennis_court.png" alt="cancha de tenis" usemap="#court">
         <map id="mapacancha" name="court">
           <area id="malla" shape="rect" coords="293,495,983,574" data-toggle="popover" title="Malla" data-placement="top" data-content="Su altura es de 0,914m">
           <area shape="poly" coords="418,326,216,903,313,898,462,326" data-toggle="popover" title="Corredor de dobles" data-placement="top" data-content="Si juegas la modalidad de sencillos, las pelotas que caigan en ésta zona son malas. Pero si juegas la modalidad de dobles, las pelotas que entren a ésta zona son buenas">
@@ -186,19 +198,24 @@
 
       <div class="tab-content">
         <div id="home" class="tab-pane fade in active">
+          
+          <!-- Este ID está repetido: el ID está para ser usado una sola vez por página -->
+          
+<!-- frameborder está obsoleto en los iframes, ahora hay que usar CSS -->
+          
           <p id="parrafoMapa" class="parrafo text-center">Para más información, visita la página de la <a href="https://www.ligadetenisdebogota.com/" target="_blank"> Liga de Tenis de Bogotá</a></p>
-          <iframe id="mapaBogota" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31813.765235256746!2d-74.07972545100591!3d4.643836319810645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1stenis+de+campo+bogota!5e0!3m2!1ses!2ses!4v1503454788433" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <iframe id="mapaBogota" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31813.765235256746!2d-74.07972545100591!3d4.643836319810645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1stenis+de+campo+bogota!5e0!3m2!1ses!2ses!4v1503454788433" width="100%" height="450" style="border:0" allowfullscreen></iframe>
         </div>
         <div id="menu1" class="tab-pane fade">
-          <p id="parrafoMapa" class="parrafo text-center">Para más información, visita la página de la <a href="http://www.lattenis.com/" target="_blank"> Liga Antioqueña de Tenis de Campo</a></p>
-          <iframe id="mapaMedellin" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d38972.91316502933!2d-75.60371005843058!3d6.246172870672464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sliga+de+tenis+medellin!5e0!3m2!1ses!2ses!4v1503531883799" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <p id="" class="parrafo text-center">Para más información, visita la página de la <a href="http://www.lattenis.com/" target="_blank"> Liga Antioqueña de Tenis de Campo</a></p>
+          <iframe id="mapaMedellin" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d38972.91316502933!2d-75.60371005843058!3d6.246172870672464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sliga+de+tenis+medellin!5e0!3m2!1ses!2ses!4v1503531883799" width="100%" height="450" style="border:0" allowfullscreen></iframe>
         </div>
         <div id="menu2" class="tab-pane fade">
-          <p id="parrafoMapa" class="parrafo text-center">Para más información, visita la página de la <a href="https://es-la.facebook.com/Liga-Vallecaucana-de-Tenis-De-Campo-1691899034433186/" target="_blank"> Liga Vallecaucana de Tenis de Campo</a></p>
+          <p id="" class="parrafo text-center">Para más información, visita la página de la <a href="https://es-la.facebook.com/Liga-Vallecaucana-de-Tenis-De-Campo-1691899034433186/" target="_blank"> Liga Vallecaucana de Tenis de Campo</a></p>
           <iframe id="mapaCali" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.6963299349713!2d-76.53771178580394!3d3.423941897507812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a6bd61938ad9%3A0xf77f453f4e4f3cdb!2sLiga+Vallecaucana+de+Tenis!5e0!3m2!1ses!2ses!4v1503531940268" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
         <div id="menu3" class="tab-pane fade">
-          <p id="parrafoMapa" class="parrafo text-center">Para más información, visita la página de la <a href="https://es-la.facebook.com/liritenis" target="_blank"> Liga Risaraldense de Tenis</a></p>
+          <p id="" class="parrafo text-center">Para más información, visita la página de la <a href="https://es-la.facebook.com/liritenis" target="_blank"> Liga Risaraldense de Tenis</a></p>
           <iframe id="mapaPereira" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1017940.5503775867!2d-75.52446040821542!3d4.712572066658769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e387a4b2f4675f5%3A0x17905f7e4591d970!2sClub+Campestre+Pereira!5e0!3m2!1ses!2ses!4v1503532030203" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
       </div>

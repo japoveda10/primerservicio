@@ -1,9 +1,42 @@
 # Primer Servicio
 
-La página que todo el mundo tiene que ver para aprender sobre tenis.
+![Primer Servicio´s home page][image1]
 
-Visite Primer Servicio en: https://japoveda10.github.io/primerservicio/
+[image1]: https://github.com/japoveda10/primerservicio/blob/master/images/primerservicio_homepage.png
 
-![Pagina principal de Primer Servicio][imagen1]
+## What is it?
 
-[imagen1]: https://github.com/japoveda10/primerservicio/blob/master/images/primerservicio_homepage.png
+The web page everyone should visit to learn about tennis.
+
+## How to install it?
+
+1. Clone the project
+
+```
+git clone https://github.com/japoveda10/primerservicio.git
+```
+
+2. Enter the project folder
+
+```
+cd primerservicio
+```
+
+3. Open index.html
+
+```
+open index.html
+```
+
+## Description
+
+This web page was built using HTML, CSS, Bootstrap and JavaScript.
+
+## Web page
+
+Visit: https://japoveda10.github.io/primerservicio/
+
+## Author
+
+[Julio Poveda](https://github.com/japoveda10)
+

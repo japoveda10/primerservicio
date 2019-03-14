@@ -6,7 +6,7 @@
 
 ## What is it?
 
-The web page everyone should visit to learn about tennis.
+The web page everyone should visit to learn about tennis... and practice spanish :)
 
 ## How to install it?
 

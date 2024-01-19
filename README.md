@@ -13,7 +13,7 @@ The web page everyone should visit to learn about tennis... and practice spanish
 1. Clone the project
 
 ```
-git clone https://github.com/japoveda10/primerservicio.git
+git clone https://github.com/juliopovedacs/primerservicio.git
 ```
 
 2. Enter the project folder
@@ -34,9 +34,9 @@ This web page was built using HTML, CSS, Bootstrap and JavaScript.
 
 ## Web page
 
-Visit: https://japoveda10.github.io/primerservicio/
+Visit: https://juliopovedacs.github.io/primerservicio/
 
 ## Author
 
-[Julio Poveda](https://github.com/japoveda10)
+[Julio Poveda](https://github.com/juliopovedacs)
 
